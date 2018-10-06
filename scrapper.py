@@ -12,6 +12,8 @@ hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML,
        'Accept-Language': 'en-US,en;q=0.8',
        'Connection': 'keep-alive'}
 
+list_p = []
+
 for j in range(6):
     print (j)
     print (thislist[j])
@@ -23,5 +25,25 @@ for j in range(6):
         i = 0
         for aaa in aa:
             aaaa = aa[i]
+            ss = "https://energyplus.net" + aaaa.attrs['href']
+            print (ss)
+            list_p.append(ss)
             print aaaa.text.strip(), '=>', aaaa.attrs['href']
             i += 1
+list_pf = []
+for k in range(len(list_p)):
+    req = urllib2.Request(list_p[k], headers=hdr)
+    page = urllib2.urlopen(req)
+    soup = BeautifulSoup(page, 'html.parser')
+    for div in soup.findAll('div', {'class': 'btn-group-vertical'}):
+        aa = div.findAll('a')
+        i = 0
+        for aaa in aa:
+            aaaa = aa[i]
+            ss = "https://energyplus.net" + aaaa.attrs['href'] + ".epw"
+            print (ss)
+            list_pf.append(ss)
+            print aaaa.text.strip(), '=>', aaaa.attrs['href']
+            i += 1
+
+print (list_pf)
