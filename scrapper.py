@@ -40,12 +40,18 @@ for k in range(len(list_p)):
         aa = div.findAll('a')
         i = 0
         for aaa in aa:
-            aaaa = aa[i]
-            ss = "https://energyplus.net" + aaaa.attrs['href'] + ".epw"
+            aaaaa = aa[i]
+            aaaa = aaaaa.attrs['href']
+            ss = "https://energyplus.net" + "/weather-download" + aaaa[17:]
+            pp = ss.rsplit('//',1)[1]
+            ss = ss + "/" + pp + ".epw"
             print (ss)
             list_pf.append(ss)
-            print aaaa.text.strip(), '=>', aaaa.attrs['href']
+            print aaaaa.text.strip(), '=>', aaaaa.attrs['href']
             i += 1
+
+for k in range(len(list_pf)):
+    print (list_pf[k])
 
 print (list_pf)
 for k in range(len(list_pf)):
@@ -53,3 +59,5 @@ for k in range(len(list_pf)):
     r = requests.get(url, allow_redirects=True)
     name = "p" + str(k) + ".epw"
     open(name, 'wb').write(r.content)
+
+print (len(list_pf))
