@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import urllib2
 from bs4 import BeautifulSoup
+import requests
 
 # specify the url
 thislist = ['https://energyplus.net/weather-region/africa_wmo_region_1', 'https://energyplus.net/weather-region/asia_wmo_region_2', 'https://energyplus.net/weather-region/south_america_wmo_region_3', 'https://energyplus.net/weather-region/north_and_central_america_wmo_region_4', 'https://energyplus.net/weather-region/southwest_pacific_wmo_region_5', 'https://energyplus.net/weather-region/europe_wmo_region_6']
@@ -47,3 +48,8 @@ for k in range(len(list_p)):
             i += 1
 
 print (list_pf)
+for k in range(len(list_pf)):
+    url = list_pf[k]
+    r = requests.get(url, allow_redirects=True)
+    name = "p" + str(k) + ".epw"
+    open(name, 'wb').write(r.content)
