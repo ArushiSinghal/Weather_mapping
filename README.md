@@ -28,3 +28,8 @@ Tutorials/Documentations for BeautifulSoup
 3) https://medium.freecodecamp.org/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe
 
 
+EnergyPlus weather data:
+. https://energyplus.net/weather
+
+
+
