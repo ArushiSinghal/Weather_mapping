@@ -64,10 +64,8 @@ while k >= 0:
             i += 1
     k += 1
 
-for k in range(len(list_pf)):
-    print (list_pf[k])
+list_pf = list(set(list_pf))
 
-print (list_pf)
 for k in range(len(list_pf)):
     url = list_pf[k]
     print (url)
