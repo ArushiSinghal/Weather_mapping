@@ -7,6 +7,8 @@ sudo pip install requests
 
 sudo pip install pandas
 
+sudo pip install lxml
+
 # Scraped Weather Data files #
 https://drive.google.com/file/d/1LPn-xfeXa2wIGgi0JQQ0seAAnOolBpKY/view?usp=sharing
 
