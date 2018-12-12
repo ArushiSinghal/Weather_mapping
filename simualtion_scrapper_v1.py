@@ -21,7 +21,10 @@ for root, dirs, files in os.walk("../all_html/"):
 new_table = pd.DataFrame(columns=range(0,7), index = [0])
 row_marker = 0
 list1 = []
-for i in range(3):
+list_final = []
+marking = 0;
+for i in range(len(list_filename)):
+	list_final.append([])
 	quote_page = 'file:///home/user/all_html/' + list_filename[i]
 	page = urllib2.urlopen(quote_page)
 	soup = BeautifulSoup(page, 'lxml') 
@@ -38,8 +41,15 @@ for i in range(3):
 			if (column_marker >= 2):
 				break
 			list1[row_marker].append(column.get_text())
+			if (row_marker >= 1 and column_marker >= 1):
+				list_final[marking].append(column.get_text())
 			column_marker += 1
 		row_marker += 1
-	print (list1)
-	list1 = pd.DataFrame(list1)
-	print (list1)
+	#print (list1)
+	#list1 = pd.DataFrame(list1)
+	#print (list1)
+	marking += 1
+
+print (list_final)
+list_final = pd.DataFrame(list_final)
+print (list_final)
