@@ -11,8 +11,6 @@ from pandas import DataFrame
 
 hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3', 'Accept-Encoding': 'none', 'Accept-Language': 'en-US,en;q=0.8', 'Connection': 'keep-alive'}
 
-#onlyfiles = [f for f in listdir(all_html) if isfile(join(all_html, f))]
-
 list_filename = []
 for root, dirs, files in os.walk("../all_html/"):  
     for filename in files:
@@ -48,13 +46,9 @@ for i in range(len(list_filename)):
 				list_final[marking].append(column.get_text())
 			column_marker += 1
 		row_marker += 1
-	#print (list1)
-	#list1 = pd.DataFrame(list1)
-	#print (list1)
 	list_final[marking].append(continent)
 	marking += 1
 
-#print (list_final)
 list_final = pd.DataFrame(list_final)
 print (list_final)
 list_final.to_csv('a3.csv', sep='\t')
