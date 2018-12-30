@@ -23,9 +23,12 @@ row_marker = 0
 list1 = []
 list_final = []
 marking = 0;
-for i in range(len(list_filename)):
+for i in range(100):
 	list_final.append([])
 	quote_page = 'file:///home/user/all_html/' + list_filename[i]
+	continent = list_filename[i]
+	continent = continent.split('_')[0]
+	print (continent)
 	page = urllib2.urlopen(quote_page)
 	soup = BeautifulSoup(page, 'lxml') 
 	table = soup.find_all('table')[3] 
@@ -48,10 +51,11 @@ for i in range(len(list_filename)):
 	#print (list1)
 	#list1 = pd.DataFrame(list1)
 	#print (list1)
+	list_final[marking].append(continent)
 	marking += 1
 
 #print (list_final)
 list_final = pd.DataFrame(list_final)
 print (list_final)
-list_final.to_csv('a1.csv', sep='\t')
-list_final.to_csv('a2.csv', sep='\t', encoding='utf-8')
+list_final.to_csv('a3.csv', sep='\t')
+list_final.to_csv('a4.csv', sep='\t', encoding='utf-8')
