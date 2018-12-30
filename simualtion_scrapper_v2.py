@@ -23,7 +23,7 @@ row_marker = 0
 list1 = []
 list_final = []
 marking = 0;
-for i in range(100):
+for i in range(len(list_filename)):
 	list_final.append([])
 	quote_page = 'file:///home/user/all_html/' + list_filename[i]
 	continent = list_filename[i]
