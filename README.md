@@ -41,4 +41,4 @@ https://drive.google.com/drive/folders/1KZp9kr70MAEiZV1HTTBYBnKhiqZF7udu?usp=sha
 4) EnergyPlus weather data: https://energyplus.net/weather
 
 # Errors #
-htm file missing of KWT_KISR.Coastal.Station.405850_KISR.epw
+1) htm file missing of KWT_KISR.Coastal.Station.405850_KISR.epw
