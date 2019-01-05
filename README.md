@@ -30,6 +30,8 @@ https://drive.google.com/open?id=15tNDddwi4cKhnoWZF6BNfrxef_NpqZei
 
 All 3018 weather data files of all the region (stat files)
 
+https://drive.google.com/drive/folders/1KZp9kr70MAEiZV1HTTBYBnKhiqZF7udu?usp=sharing
+
 
 
 # Documentation #
