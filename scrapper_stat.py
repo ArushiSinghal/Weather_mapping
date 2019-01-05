@@ -64,12 +64,14 @@ while k >= 0:
             i += 1
     k += 1
 
+print (len(list_pf))
 list_pf = list(set(list_pf))
-
+print (len(list_pf))
+print (list_pf)
 for k in range(len(list_pf)):
     url = list_pf[k]
-    print (url)
+    #print (url)
     r = requests.get(url, allow_redirects=True)
     open(list_name[k], 'wb').write(r.content)
 
-print (len(list_pf))
+#print (len(list_pf))
