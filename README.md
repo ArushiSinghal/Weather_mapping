@@ -40,5 +40,5 @@ https://drive.google.com/drive/folders/1KZp9kr70MAEiZV1HTTBYBnKhiqZF7udu?usp=sha
 3) https://medium.freecodecamp.org/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe
 4) EnergyPlus weather data: https://energyplus.net/weather
 
-
-
+# Errors #
+1) htm file missing of KWT_KISR.Coastal.Station.405850_KISR.epw
