@@ -20,13 +20,17 @@ All HTML files without names
 
 https://drive.google.com/file/d/1hAMWSxrFjdisKXBz3CaSW09KIqpJBy9M/view?usp=sharing
 
-All 3034 weather data files of all the region
+All 3034 weather data files of all the region (epw files)
 
 https://drive.google.com/file/d/1tXkb8R0xJ62z3f9SBp1pctN1SQ0OYBX5/view?usp=sharing
 
 Simulations HTML Files (version 1)
 
 https://drive.google.com/open?id=15tNDddwi4cKhnoWZF6BNfrxef_NpqZei
+
+All 3018 weather data files of all the region (stat files)
+
+
 
 # Documentation #
 1) https://www.crummy.com/software/BeautifulSoup/bs4/doc/
