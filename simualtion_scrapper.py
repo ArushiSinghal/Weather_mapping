@@ -26,7 +26,7 @@ for i in range(len(list_filename)):
 	quote_page = 'file:///home/user/all_html/' + list_filename[i]
 	continent = list_filename[i]
 	continent = continent.split('_')[0]
-	print (continent)
+	#print (continent)
 	page = urllib2.urlopen(quote_page)
 	soup = BeautifulSoup(page, 'lxml') 
 	table = soup.find_all('table')[3] 
@@ -47,8 +47,9 @@ for i in range(len(list_filename)):
 			column_marker += 1
 		row_marker += 1
 	list_final[marking].append(continent)
-	words2 = list_filename[i].split(".")
-	words2 = words2[len(words2) - 1]
+	words2 = list_filename[i].rsplit('.', 1)
+	words2 = words2[0]
+	print (words2)
 	list_final[marking].append(words2)
 	marking += 1
 
