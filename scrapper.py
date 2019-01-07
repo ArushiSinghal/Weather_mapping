@@ -67,9 +67,11 @@ while k >= 0:
 list_pf = list(set(list_pf))
 
 for k in range(len(list_pf)):
-    url = list_pf[k]
-    print (url)
-    r = requests.get(url, allow_redirects=True)
-    open(list_name[k], 'wb').write(r.content)
+	url = list_pf[k]
+	print (url)
+	words2 = url.split("/")
+	words2 = words2[len(words2) - 1]
+	r = requests.get(url, allow_redirects=True)
+	open(words2, 'wb').write(r.content)
 
 print (len(list_pf))
