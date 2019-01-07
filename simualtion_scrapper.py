@@ -29,7 +29,11 @@ for i in range(len(list_filename)):
 	#print (continent)
 	page = urllib2.urlopen(quote_page)
 	soup = BeautifulSoup(page, 'lxml') 
-	table = soup.find_all('table')[3] 
+	table = soup.find_all('table')[3]
+	soup1 = BeautifulSoup(page, 'html.parser')
+	table1 = soup1.find_all('p')[4]
+	ppp11 = table1.get_text()
+	ppp11 = ppp11.split('WMO#=')[1]
 	row_marker = 0
 	list1 = []
 	for row in table.find_all('tr'):
@@ -51,6 +55,7 @@ for i in range(len(list_filename)):
 	words2 = words2[0]
 	print (words2)
 	list_final[marking].append(words2)
+	list_final[marking].append(ppp11)
 	marking += 1
 
 list_final = pd.DataFrame(list_final)
