@@ -13,3 +13,9 @@ for root, dirs, files in os.walk("../all_stat/"):
     for filename in files:
         list_filename.append(filename)
 
+list_final = []
+for i in range(len(list_filename)):
+	filenames = "../all_stat/" + list_filename[i]
+	with open (filenames, 'rt') as in_file:
+		for line in in_file:
+			print(line)
