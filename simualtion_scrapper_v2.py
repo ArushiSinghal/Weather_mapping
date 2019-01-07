@@ -47,6 +47,7 @@ for i in range(len(list_filename)):
 			column_marker += 1
 		row_marker += 1
 	list_final[marking].append(continent)
+	list_final[marking].append(list_filename[i])
 	marking += 1
 
 list_final = pd.DataFrame(list_final)
