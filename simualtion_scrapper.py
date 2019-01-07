@@ -30,7 +30,8 @@ for i in range(len(list_filename)):
 	page = urllib2.urlopen(quote_page)
 	soup = BeautifulSoup(page, 'lxml') 
 	table = soup.find_all('table')[3]
-	soup1 = BeautifulSoup(page, 'html.parser')
+	page1 = urllib2.urlopen(quote_page)
+	soup1 = BeautifulSoup(page1, 'html.parser')
 	table1 = soup1.find_all('p')[4]
 	ppp11 = table1.get_text()
 	ppp11 = ppp11.split('WMO#=')[1]
