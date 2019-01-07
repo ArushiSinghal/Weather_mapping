@@ -93,3 +93,6 @@ https://drive.google.com/drive/folders/1-oaBjOUQDTkVfgnU2VqpKj9lFtA7RYXO?usp=sha
   4) 785260
   5) 828990
   6) 726810
+  
+  # Very Important link with many details on weather zones of US and other countries:-
+  https://xp20.ashrae.org/standard169/index.html
