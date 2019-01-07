@@ -39,6 +39,15 @@ https://drive.google.com/drive/folders/1-oaBjOUQDTkVfgnU2VqpKj9lFtA7RYXO?usp=sha
 3) https://medium.freecodecamp.org/how-to-scrape-websites-with-python-and-beautifulsoup-5946935d93fe
 4) EnergyPlus weather data: https://energyplus.net/weather
 
+# Code files Description #
+1) scrapper.py -  to scrap epw weather files.
+2) scrap_stat_weather_type.py - to find the weather zone from already scrapped stat files.
+3) scrapper_stat.py - to scrap stat weather files.
+4) simualtion_scrapper_id.py - to find the unique id of weather files from the html files generated after simulations.
+5) simualtion_scrapper.py - 
+6) simualtion_scrapper_v1.py
+7) simualtion_scrapper_v2.py
+
 # Errors #
 1) htm file missing of KWT_KISR.Coastal.Station.405850_KISR.epw
 
