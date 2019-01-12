@@ -99,3 +99,4 @@ https://drive.google.com/drive/folders/1-oaBjOUQDTkVfgnU2VqpKj9lFtA7RYXO?usp=sha
   
   # Papers for literature review
   1) http://www.ibpsa.org/proceedings/BS2011/P_1550.pdf
+  2) http://orbit.dtu.dk/files/68467948/p_1481.pdf
