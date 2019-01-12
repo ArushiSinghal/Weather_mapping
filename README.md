@@ -96,3 +96,6 @@ https://drive.google.com/drive/folders/1-oaBjOUQDTkVfgnU2VqpKj9lFtA7RYXO?usp=sha
   
   # Very Important link with many details on weather zones of US and other countries:-
   https://xp20.ashrae.org/standard169/index.html
+  
+  #Papers for literature review
+  1) http://www.ibpsa.org/proceedings/BS2011/P_1550.pdf
